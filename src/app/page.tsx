@@ -3,14 +3,15 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Tentang Saya | Rayhan Pradana',
-  description: 'Halaman Tentang Saya yang menampilkan informasi pribadi dan foto 3D.',
-  openGraph: {
-    title: 'Tentang Saya | Rayhan Pradana',
-    description: 'Halaman Tentang Saya yang menampilkan informasi pribadi dan foto 3D.',
+  description: 'Halaman Tentang Saya yang menampilkan informasi pribadi saya.',
+    openGraph: {
+      images: "https://example/com/default-image.jpg" ,
+      url: "https://exmaple.com"
   },
 };
 
-export default function Home() {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
+export default function Home({ metadata }: any) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-zinc-100 py-16 px-4 sm:px-6 md:px-8">
       <div className="max-w-4xl mx-auto">

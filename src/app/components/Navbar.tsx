@@ -32,7 +32,7 @@ export default function Navbar() {
           <NavItem title="Tentang Saya" url="/" isSelected={pathname === '/'} />
           <NavItem title="Proyek" url="/projects" isSelected={pathname === '/projects'} />
           <NavItem title="Esai" url="/essays" isSelected={pathname === '/essays'} />
-          <NavItem title="etc." url="/seo" isSelected={pathname === '/seo'} />
+          {/* <NavItem title="etc." url="/seo" isSelected={pathname === '/seo'} /> */}
         </ul>
       </nav>
     </div>
